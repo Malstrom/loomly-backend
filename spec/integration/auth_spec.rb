@@ -1,11 +1,12 @@
-# spec/integration/auth_spec.rb
 require 'swagger_helper'
 
 RSpec.describe 'Authentication', type: :request do
   path '/users/sign_in' do
-    post 'User login' do
-      tags 'Auth'
+    post 'Sign in a user' do
+      tags 'Authentication'
       consumes 'application/json'
+      produces 'application/json'
+
       parameter name: :credentials, in: :body, schema: {
         type: :object,
         properties: {
@@ -18,12 +19,16 @@ RSpec.describe 'Authentication', type: :request do
             required: %w[email password]
           }
         },
-        required: ['user']
+        required: [ 'user' ]
       }
 
-      response '200', 'login success' do
-        let(:user) { create(:user, email: 'test@test.com', password: 'password') }
-        let(:credentials) { { user: { email: user.email, password: 'password' } } }
+      response '200', 'signed in' do
+        parameter name: :Authorization,
+                  in: :header,
+                  type: :string,
+                  description: 'JWT token in Authorization header',
+                  required: false
+
         run_test!
       end
     end

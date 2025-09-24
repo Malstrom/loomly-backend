@@ -4,10 +4,14 @@ class Users::SessionsController < Devise::SessionsController
   private
 
   def respond_with(resource, _opts = {})
-    render json: { user: { id: resource.id, email: resource.email } }, status: :ok
+    render json: { message: 'Logged in successfully.', user: resource }, status: :ok
   end
 
   def respond_to_on_destroy
-    render json: { message: 'signed_out' }, status: :ok
+    if current_user
+      render json: { message: "Logged out successfully." }, status: :ok
+    else
+      render json: { errors: ["Invalid token"] }, status: :unauthorized
+    end
   end
 end

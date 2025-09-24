@@ -3,16 +3,33 @@ openapi: 3.0.1
 info:
   title: API V1
   version: v1
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+security:
+- bearerAuth: []
+servers:
+- url: http://localhost:3000
+  description: Local dev server
 paths:
   "/users/sign_in":
     post:
-      summary: User login
+      summary: Sign in a user
       tags:
-      - Auth
-      parameters: []
+      - Authentication
+      parameters:
+      - name: Authorization
+        in: header
+        description: JWT token in Authorization header
+        required: false
+        schema:
+          type: string
       responses:
         '200':
-          description: login success
+          description: signed in
       requestBody:
         content:
           application/json:
@@ -31,3 +48,15 @@ paths:
                   - password
               required:
               - user
+  "/api/v1/profile":
+    get:
+      summary: Show current user profile
+      tags:
+      - Profile
+      security:
+      - bearerAuth: []
+      responses:
+        '200':
+          description: Profile data
+        '401':
+          description: Unauthorized

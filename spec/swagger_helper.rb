@@ -1,3 +1,4 @@
+# spec/swagger_helper.rb
 require 'rails_helper'
 
 RSpec.configure do |config|
@@ -10,7 +11,22 @@ RSpec.configure do |config|
         title: 'API V1',
         version: 'v1'
       },
-      paths: {}
+      components: {
+        securitySchemes: {
+          bearerAuth: {
+            type: :http,
+            scheme: :bearer,
+            bearerFormat: :JWT
+          }
+        }
+      },
+      security: [{ bearerAuth: [] }],
+      servers: [
+        {
+          url: 'http://localhost:3000',
+          description: 'Local dev server'
+        }
+      ]
     }
   }
 

@@ -60,6 +60,6 @@ group :development, :test do
   gem 'rspec-rails'  # RSpec for Rails
 end
 
-group :development do
-  gem 'annotaterb'  # A gem for generating annotations for Rails projects.
+group :test do
+  gem "simplecov", require: false
 end
