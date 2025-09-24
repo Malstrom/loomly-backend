@@ -1,0 +1,3 @@
+app_name: "Loomly Backend"
+jwt:
+  expiration_days: 7
