@@ -1,10 +1,33 @@
 inherit_from: .rubocop_todo.yml
 
 # Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
 
-# Overwrite or add rules to create your own house style
-#
-# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
-# Layout/SpaceInsideArrayLiteralBrackets:
-#   Enabled: false
+# Custom rules for loomly-backend
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always_true
+  Enabled: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+# Altri controlli consigliati
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/BlockLength:
+  Max: 25
+
+Layout/LineLength:
+  Max: 100
+
+AllCops:
+  TargetRubyVersion: 3.3
+  Exclude:
+    - 'db/schema.rb'
+    - 'bin/**/*'
+    - 'config/**/*'

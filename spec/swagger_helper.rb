@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/swagger_helper.rb
 require 'rails_helper'
 
