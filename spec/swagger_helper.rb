@@ -20,7 +20,7 @@ RSpec.configure do |config|
           }
         }
       },
-      security: [{ bearerAuth: [] }],
+      security: [ { bearerAuth: [] } ],
       servers: [
         {
           url: 'http://localhost:3000',

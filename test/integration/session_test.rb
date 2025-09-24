@@ -36,5 +36,4 @@ class SessionFlowTest < ActionDispatch::IntegrationTest
     body = JSON.parse(response.body)
     assert_includes body["errors"], "Invalid token"
   end
-
 end

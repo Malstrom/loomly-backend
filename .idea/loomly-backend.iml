@@ -233,25 +233,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="annotaterb (vbundled(4.19.0)) [path][gem]" type="rubylib">
-        <properties>
-          <option name="version" value="4" />
-        </properties>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/annotaterb-4.19.0/exe" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/annotaterb-4.19.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/annotaterb-4.19.0/exe" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/annotaterb-4.19.0/lib" />
-        </SOURCES>
-        <excluded>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/annotaterb-4.19.0/exe" />
-        </excluded>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="ast (vbundled(2.4.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -624,6 +605,25 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/diff-lcs-1.6.2/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/diff-lcs-1.6.2/docs" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/diff-lcs-1.6.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="docile (vbundled(1.4.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/docile-1.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/docile-1.4.1/.github" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/docile-1.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/docile-1.4.1/.github" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/docile-1.4.1/.github" />
         </excluded>
       </library>
     </orderEntry>
@@ -2039,6 +2039,61 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="simplecov (vbundled(0.22.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-0.22.0/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-0.22.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-0.22.0/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-0.22.0/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-0.22.0/doc" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="simplecov-html (vbundled(0.13.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/views" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/public" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/views" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/public" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/views" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov-html-0.13.2/public" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="simplecov_json_formatter (vbundled(0.1.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov_json_formatter-0.1.4/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/3.3.0/gems/simplecov_json_formatter-0.1.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="solid_cable (vbundled(3.0.12)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -2402,10 +2457,6 @@
         <option value="active_record:migration" />
         <option value="active_record:model" />
         <option value="active_record:multi_db" />
-        <option value="annotate_rb:config" />
-        <option value="annotate_rb:hook" />
-        <option value="annotate_rb:install" />
-        <option value="annotate_rb:update_config" />
         <option value="application_record" />
         <option value="authentication" />
         <option value="benchmark" />
@@ -2480,10 +2531,6 @@
         <option value="active_record:migration" />
         <option value="active_record:model" />
         <option value="active_record:multi_db" />
-        <option value="annotate_rb:config" />
-        <option value="annotate_rb:hook" />
-        <option value="annotate_rb:install" />
-        <option value="annotate_rb:update_config" />
         <option value="application_record" />
         <option value="authentication" />
         <option value="benchmark" />
@@ -2709,9 +2756,9 @@
           </RakeTaskImpl>
           <RakeTaskImpl id="manual_annotate">
             <subtasks>
-              <RakeTaskImpl description="Annota modelli e Gemfile" fullCommand="manual_annotate:all" id="all" />
-              <RakeTaskImpl description="Annota il Gemfile con le versioni attuali delle gemme" fullCommand="manual_annotate:gemfile" id="gemfile" />
-              <RakeTaskImpl description="Annota i modelli con schema DB (senza gemme esterne)" fullCommand="manual_annotate:models" id="models" />
+              <RakeTaskImpl description="Annotate both Gemfile and models" fullCommand="manual_annotate:all" id="all" />
+              <RakeTaskImpl description="Annotate Gemfile with short gem descriptions (overwrite existing comments)" fullCommand="manual_annotate:gemfile" id="gemfile" />
+              <RakeTaskImpl description="Annotate models with schema information from db/schema.rb (at the bottom of the file)" fullCommand="manual_annotate:models" id="models" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="rswag">
@@ -2750,11 +2797,17 @@
           <RakeTaskImpl id="spec">
             <subtasks>
               <RakeTaskImpl description="Run the code examples in spec/integration" fullCommand="spec:integration" id="integration" />
+              <RakeTaskImpl description="Run the code examples in spec/requests" fullCommand="spec:requests" id="requests" />
               <RakeTaskImpl description="" fullCommand="spec:prepare" id="prepare" />
               <RakeTaskImpl description="" fullCommand="spec:statsetup" id="statsetup" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Report code statistics (KLOCs, etc) from the application or engine" fullCommand="stats" id="stats" />
+          <RakeTaskImpl id="swagger">
+            <subtasks>
+              <RakeTaskImpl description="Generate a JWT token for Swagger UI and update rswag_ui.rb" fullCommand="swagger:refresh_token" id="refresh_token" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl id="time">
             <subtasks>
               <RakeTaskImpl description="List all time zones, list by two-letter country code (`bin/rails time:zones[US]`), or list by UTC offset (`bin/rails time:zones[-8]`)" fullCommand="time:zones[country_or_offset]" id="zones[country_or_offset]" />

@@ -11,7 +11,7 @@ class Users::SessionsController < Devise::SessionsController
     if current_user
       render json: { message: "Logged out successfully." }, status: :ok
     else
-      render json: { errors: ["Invalid token"] }, status: :unauthorized
+      render json: { errors: [ "Invalid token" ] }, status: :unauthorized
     end
   end
 end
