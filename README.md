@@ -1,24 +1,58 @@
-# README
+# Loomly Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Loomly Backend is a **Ruby on Rails (API only)** application that provides the backend for a matching your soulmate app.  
+It handles JWT authentication, user registration, profile management, and API documentation via Swagger.
 
-Things you may want to cover:
+---
+## Requirements
 
-* Ruby version
+- **Ruby**: 3.3.1  
+- **Rails**: 8.0.3  
+- **PostgreSQL**: >= 14  
+- **Redis**: >= 7 (per Sidekiq, cache e lock manager)  
+- **Bundler**: >= 2.5
+---
 
-* System dependencies
+## Configuration
 
-* Configuration
+Clone repository:
 
-* Database creation
+```bash
+git clone https://github.com/Malstrom/loomly-backend.git
+cd loomly-backend
+```
 
-* Database initialization
+### Configure credentials (JWT example)
 
-* How to run the test suite
+```bin/rails credentials:edit```
 
-* Services (job queues, cache servers, search engines, etc.)
+add
 
-* Deployment instructions
+```devise_jwt_secret_key: your-secret-key```
 
-* ...
+## DB
+
+```
+bin/rails db:create
+bin/rails db:migrate
+```
+
+## Test
+
+```bin/rails test```
+
+## API-Docs
+
+You need first to start server
+
+```rails s```
+
+after you can open in browser:
+
+http://localhost:3000/api-docs
+
+For regenerate api-doc you need to execute:
+
+```
+bundle exec rake rswag:specs:swaggerize
+```
